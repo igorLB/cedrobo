@@ -15,10 +15,12 @@ $(document).on("submit", "#conversation", function (e) {
         "</p></div>";
 
     $(".conversation").append(msgBlock);
+    $("#userInput").val("");
     $cont[0].scrollTop = $cont[0].scrollHeight;
 
     $("#botStatus").text("Digitando...");
 
+    // configurando uma requisição padrão do botman
     form.append("driver", "web");
     form.append("userId", "123543");
     form.append("message", message);
@@ -56,8 +58,6 @@ $(document).on("submit", "#conversation", function (e) {
             setTimeout(function () {
                 $("#botStatus").text("Online");
             }, milliseconds);
-
-            $("#userInput").val("");
         },
     });
 });

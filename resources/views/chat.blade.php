@@ -5,7 +5,7 @@
     <div class="container my-5 d-flex justify-content-center">
         <div class="card">
             <div class="card-header">
-                <h2 class="card-title mb-0">Robô ajudante</h2>
+                <h2 class="card-title mb-0">Cedrobô</h2>
                 <small id="botStatus">Online</small>
             </div>
             <div class="card-body">

@@ -28,7 +28,8 @@ body {
 }
 
 .conversation {
-    height: 500px;
+    min-height: 300px;
+    height: 50vh;
     color: #ffffff;
     overflow: auto;
 }

@@ -17,7 +17,7 @@ class GreetingConversation extends Conversation
      */
     public function askName()
     {
-        $this->say('Oi, me chamo robô e vou te ajudar!');
+        $this->say('Oi, me chamo Cedrobô e vou te ajudar!');
 
         $this->ask('Para começar, me fala o seu primeiro nome', function (Answer $answer) {
 
@@ -34,7 +34,7 @@ class GreetingConversation extends Conversation
     }
 
     /**
-     * BOT pergunta o e-mail do usuário
+     * BOT pergunta o e-mail do usuário usando Validator do Laravel para validação
      *
      * @return void
      */
@@ -70,7 +70,7 @@ class GreetingConversation extends Conversation
 
 
     /**
-     * Start the conversation.
+     * Inicia a conversa
      *
      * @return mixed
      */

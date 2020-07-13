@@ -11,9 +11,18 @@
 |
 */
 
+use App\User;
+use Illuminate\Support\Facades\Route;
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('chat');
+})->name('conversar');
+
+Route::get('/cadastros', function () {
+
+    $users = User::orderBy('created_at', 'DESC')->get();
+
+    return view('user-list', ['users' => $users]);
 });
 
 Route::match(['get', 'post'], '/botman', 'BotManController@handle');
-Route::get('/botman/tinker', 'BotManController@tinker');
