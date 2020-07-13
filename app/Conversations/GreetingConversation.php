@@ -40,9 +40,10 @@ class GreetingConversation extends Conversation
      */
     public function askEmail()
     {
-        $user = $this->bot->userStorage()->find();
+        $userStorage = $this->bot->userStorage()->find();
+        $question = 'Prazer ' . $userStorage->get('name') . '! Agora, por favor, digite o seu e-mail';
 
-        $this->ask('Prazer ' . $user->get('name') . '! Agora, por favor, digite o seu e-mail', function (Answer $answer) {
+        $this->ask($question, function (Answer $answer) {
 
             $validator = Validator::make(['email' => $answer->getText()], [
                 'email' => 'email',
@@ -56,16 +57,17 @@ class GreetingConversation extends Conversation
                 'email' => $answer->getText(),
             ]);
 
-            $user = $this->bot->userStorage()->find();
+            $userStorage = $this->bot->userStorage()->find();
 
-            $this->say('Legal! Te cadastrei aqui ' . $user->get('name') . '. Fique a vontade para fazer perguntas!');
+            $user = new User();
+            $user->name = $userStorage->get('name');
+            $user->email = $userStorage->get('email');
+            $user->save();
+
+            $this->say('Legal! Te cadastrei aqui ' . $user->name . '. Fique a vontade para fazer perguntas :)');
         });
     }
 
-    public function save(User $user)
-    {
-        # code...
-    }
 
     /**
      * Start the conversation.
