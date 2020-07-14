@@ -2,6 +2,10 @@
 
 Cedrobô é um chatbot sem o uso de NLP (Natural Language Processing) que tem como objetivo salvar o nome e o e-mail do usuário no banco de dados e responder perguntas sobre uma empresa fictícia, tais como: "Vocês têm site?", "Qual o whatsapp de vocês?", "O que vocês fazem?".
 
+## Link
+
+Acessar [Cedrobô](https://igorcedro.com.br/botman/public/)
+
 ## Instalação
 
 -   `git clone https://github.com/igorLB/cedrobo.git`

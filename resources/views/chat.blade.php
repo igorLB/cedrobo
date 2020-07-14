@@ -17,7 +17,7 @@
                 <form  action="{{ url('/botman', [], true) }}" method="POST" id="conversation" autocomplete="off">
                     <div class="input-group mb-3">
                         <input type="text" id="userInput" name="userInput" class="form-control p-4 bg-dark border-dark text-light"
-                            placeholder="Escreva alguma mensagem..." />
+                            placeholder="Escreva alguma mensagem..." value="Oi" />
                         <div class="input-group-append">
                             <button class="btn btn-success" type="submit" id="btnSend">
                                 Enviar
