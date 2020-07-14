@@ -4,7 +4,7 @@ Cedrobô é um chatbot sem o uso de NLP (Natural Language Processing) que tem co
 
 ## Link
 
-Acessar [Cedrobô](https://igorcedro.com.br/botman/public/)
+Acessar [Cedrobô](https://cedrobo.igorcedro.com.br/)
 
 ## Instalação
 
