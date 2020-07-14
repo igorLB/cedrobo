@@ -9,7 +9,7 @@ $botman = resolve('botman');
 /**
  * INICIANDO UMA CONVERSA
  */
-$botman->hears('(oi|ola|eae|iai|eai|iae|iniciar|começar|conversar)', BotManController::class . '@startConversation');
+$botman->hears('(oi|oii|ola|eae|iai|eai|iae|iniciar|começar|conversar)', BotManController::class . '@startConversation');
 
 $botman->hears('.*ajud.*', function ($bot) {
 

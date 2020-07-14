@@ -4,7 +4,7 @@ Cedrobô é um chatbot sem o uso de NLP (Natural Language Processing) que tem co
 
 ## Link
 
-Acessar [Cedrobô](https://cedrobo.igorcedro.com.br/)
+Acessar [Cedrobô](https://cedrobo.igorcedro.com.br/) - Experimente iniciar a conversa dando um 'Oi' :)
 
 ## Instalação
 
@@ -14,7 +14,6 @@ Acessar [Cedrobô](https://cedrobo.igorcedro.com.br/)
 -   `php artisan key:generate`
 -   Crie um banco de dados e um arquivo `.env` baseado no `.env.example`
 -   Configure as variáveis do seu banco de dados no `.env`
--   Create a database and inform .env
 -   `php artisan migrate`
 -   `php artisan serve` para iniciar o chat em: http://localhost:8000/
 
