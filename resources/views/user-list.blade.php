@@ -20,7 +20,7 @@
                                 <tr>
                                     <td>{{ $user->name }}</td>
                                     <td>{{ $user->email }}</td>
-                                    <td>{{ $user->created_at }}</td>
+                                    <td>{{ date('d/m/Y H:i:s', strtotime($user->created_at)) }}</td>
                                 </tr>
                             @endforeach
                         @else
@@ -29,6 +29,7 @@
                     @endisset
                 </tbody>
             </table>
+            <small class="text-info">Todos os dados são apagados automáticamente em 24 horas</small>
         </div>
     </div>
 
