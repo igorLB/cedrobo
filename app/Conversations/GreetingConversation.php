@@ -64,7 +64,7 @@ class GreetingConversation extends Conversation
             $user->email = $userStorage->get('email');
             $user->save();
 
-            $this->say('Legal! Te cadastrei aqui ' . $user->name . '. Fique a vontade para fazer perguntas :)');
+            $this->say('Legal! Te cadastrei aqui ' . $user->name . '. Fique a vontade para fazer perguntas sobre a empresa :)');
         });
     }
 

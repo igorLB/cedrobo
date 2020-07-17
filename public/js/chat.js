@@ -1,4 +1,5 @@
 var $cont = $(".conversation");
+var $userSession = Math.floor(Math.random() * 1000);
 $cont[0].scrollTop = $cont[0].scrollHeight;
 
 $(document).on("submit", "#conversation", function (e) {
@@ -22,7 +23,7 @@ $(document).on("submit", "#conversation", function (e) {
 
     // configurando uma requisição padrão do botman
     form.append("driver", "web");
-    form.append("userId", "123543");
+    form.append("userId", $userSession);
     form.append("message", message);
     form.append("attachment", "null");
     form.append("interactive", "0");
